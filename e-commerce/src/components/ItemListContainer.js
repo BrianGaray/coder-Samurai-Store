@@ -1,8 +1,17 @@
-function ItemListContainer({saludo}) {
+import ItemCount from "./ItemCount";
+
+function ItemListContainer() {
+  const onAdd = () => {
+    alert("Se agrego al carrito");
+  };
+
   return (
     <>
-      <h1>{saludo}</h1>
+      <ItemCount initial={1} stock={10} onAdd={onAdd} />
+
     </>
+     
+    
   );
 }
 

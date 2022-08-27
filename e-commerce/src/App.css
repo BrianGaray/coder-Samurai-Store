@@ -61,3 +61,22 @@
   color: rgba(245, 245, 245, 0.425);
   padding: 1em;
 }
+
+.AddToCart {
+  width: 30rem;
+  display: flex;
+  background: rgba(75, 54, 94, 0.26);
+  margin: 2em;
+  border-radius: 20px;
+}
+
+
+button {
+ margin: 4em;
+ width: 4em;
+ height: 4em;
+background:  rgba(245, 245, 245, 0.425);
+border: none;
+border-radius: 1em;
+
+}
