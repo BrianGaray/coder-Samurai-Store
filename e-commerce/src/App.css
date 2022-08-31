@@ -4,7 +4,7 @@
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(
       rgba(5, 5, 10, 0.8),
@@ -60,6 +60,7 @@
 .material-icons {
   color: rgba(245, 245, 245, 0.425);
   padding: 1em;
+ 
 }
 
 .AddToCart {
@@ -78,5 +79,16 @@ button {
 background:  rgba(245, 245, 245, 0.425);
 border: none;
 border-radius: 1em;
+margin-bottom: cantidad;
+}
+img{
+  width: 15em;
+  height: 20em;
+}
 
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em;
 }
