@@ -1,7 +1,6 @@
 import Items from "./Item";
 
 const ItemList = ({ items }) => {
-  console.log(items);
 
   return (
     <div class="items">

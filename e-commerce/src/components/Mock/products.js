@@ -25,4 +25,12 @@ const Products = [
   },
 ];
 
+export const OneProduct = {
+  id: 2,
+  title: "producto 2",
+  price: 100,
+  stock: 10,
+  category: "Accion",
+  img: "https://a.allegroimg.com/original/1195ed/7e685c7c4abba242c7ff478a230a/CYBERPUNK-2077-PC-STEAM",
+}
 export default Products;
