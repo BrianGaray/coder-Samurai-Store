@@ -1,5 +1,5 @@
 function Icon() {
-  return <span class="material-icons">shopping_cart</span>;
+  return <span className="material-icons">shopping_cart</span>;
 }
 
 export default Icon;
