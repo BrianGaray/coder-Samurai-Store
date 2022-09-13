@@ -1,13 +1,12 @@
 import Items from "./Item";
 
 const ItemList = ({ items }) => {
-
   return (
-    <div className="items">
+    <section className="ItemList">
       {items.map((items) => {
-        return <Items items={items} key={items.id}/>;
+        return <Items items={items} key={items.id} />;
       })}
-    </div>
+    </section>
   );
 };
 

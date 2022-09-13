@@ -1,12 +1,15 @@
+import Count from "./Count";
+
 const ItemDetail = ({ items }) => {
   console.log(items);
   return (
-    <div>
+    <section className="ItemDetail">
       <h1>{items.title}</h1>
-      <p>{items.description}</p>
       <img src={items.img} alt=""></img>
-      <h5>{items.price}</h5>
-    </div>
+      <p>{items.description}</p>
+      <h5>{items.price}$</h5>
+      <Count />
+    </section>
   );
 };
 

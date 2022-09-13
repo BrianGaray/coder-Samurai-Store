@@ -3,19 +3,9 @@
   padding: 0;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(
-      rgba(5, 5, 10, 0.8),
-      rgba(75, 54, 94, 0.911)
-    ),
-    url(https://cutewallpaper.org/21/background-gif-html/15-CSS-Animated-Backgrounds-Pintire.gif);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+body {
+  background: #161632;
 }
-
 .navbar {
   margin: auto;
   padding: 0.5em 0;
@@ -57,10 +47,22 @@
   width: 100%;
 }
 
+main {
+  background-image: linear-gradient(
+      rgba(5, 5, 10, 0.8),
+      rgba(75, 54, 94, 0.911)
+    ),
+    url(https://cutewallpaper.org/21/background-gif-html/15-CSS-Animated-Backgrounds-Pintire.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  max-height: 120vh;
+}
+
 .material-icons {
   color: rgba(245, 245, 245, 0.425);
   padding: 1em;
- 
 }
 
 .AddToCart {
@@ -71,22 +73,21 @@
   border-radius: 20px;
 }
 
-
 button {
- margin: 4em;
- width: 4em;
- height: 4em;
-background:  rgba(245, 245, 245, 0.425);
-border: none;
-border-radius: 1em;
-margin-bottom: cantidad;
+  margin: 4em;
+  width: 4em;
+  height: 4em;
+  background: rgba(245, 245, 245, 0.425);
+  border: none;
+  border-radius: 1em;
+  margin-bottom: cantidad;
 }
-img{
+img {
   width: 15em;
   height: 20em;
 }
 
-.items {
+.ItemList {
   display: flex;
   align-items: center;
   justify-content: space-between;

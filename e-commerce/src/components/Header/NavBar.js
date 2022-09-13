@@ -1,17 +1,16 @@
 import Icon from "./CartWidget";
 import { Link } from "react-router-dom";
 
-
 function Nav() {
   return (
     <div className="navbar">
       <ul>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/detail">Detail</Link>
-        </li>
+        </li> */}
         <li>
           <Link to="category/action">Action</Link>
         </li>
