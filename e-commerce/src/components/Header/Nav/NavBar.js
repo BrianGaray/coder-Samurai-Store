@@ -1,4 +1,4 @@
-import Icon from "./CartWidget";
+import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
 function Nav() {
@@ -21,7 +21,7 @@ function Nav() {
           <Link to="category/fight">Fight</Link>
         </li>
       </ul>
-      <Icon />
+      <Link to="/Cart"><CartWidget /></Link>
     </div>
   );
 }

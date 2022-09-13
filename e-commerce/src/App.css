@@ -6,6 +6,11 @@
 body {
   background: #161632;
 }
+/*HEADER*/
+
+/*HEADER*/
+
+/*NAV*/
 .navbar {
   margin: auto;
   padding: 0.5em 0;
@@ -47,6 +52,32 @@ body {
   width: 100%;
 }
 
+/*CART*/
+.material-icons {
+  color: rgba(245, 245, 245, 0.425);
+  padding: 1em;
+}
+
+.AddToCart {
+  width: 30em;
+  display: flex;
+  background: rgba(75, 54, 94, 0.623);
+  margin: 2em;
+  border-radius: 20px;
+}
+
+.AddToCart button {
+  margin: 2em;
+  width: 4em;
+  height: 4em;
+  background: rgba(245, 245, 245, 0.425);
+  border: none;
+  border-radius: 1em;
+}
+
+/*NAV*/
+
+/*MAIN*/
 main {
   background-image: linear-gradient(
       rgba(5, 5, 10, 0.8),
@@ -59,32 +90,17 @@ main {
   min-height: 90vh;
   max-height: 120vh;
 }
-
-.material-icons {
-  color: rgba(245, 245, 245, 0.425);
-  padding: 1em;
+main img {
+  width: 15em;
+  height: 20em;
 }
 
-.AddToCart {
-  width: 30rem;
-  display: flex;
-  background: rgba(75, 54, 94, 0.26);
-  margin: 2em;
-  border-radius: 20px;
-}
-
-button {
-  margin: 4em;
+main button {
   width: 4em;
-  height: 4em;
+  height: 2em;
   background: rgba(245, 245, 245, 0.425);
   border: none;
   border-radius: 1em;
-  margin-bottom: cantidad;
-}
-img {
-  width: 15em;
-  height: 20em;
 }
 
 .ItemList {
@@ -93,3 +109,24 @@ img {
   justify-content: space-between;
   padding: 4em;
 }
+
+.ItemList,
+p,
+h1,
+h5 {
+  padding: 1em;
+}
+
+.ItemDetail {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.ItemDetail button {
+  width: 4em;
+  height: 4em;
+  background: rgba(245, 245, 245, 0.425);
+  border: none;
+  border-radius: 1em;
+}
+/*MAIN*/

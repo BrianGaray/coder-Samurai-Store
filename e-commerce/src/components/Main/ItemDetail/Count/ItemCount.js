@@ -15,12 +15,17 @@ const ItemCount = ({ initial, stock, onAdd }) => {
     Count > 1 && setCount(Count - 1);
   };
 
+  const AddToCart = () => {
+    onAdd(Count)
+  };
+
+
   return (
     <div className="AddToCart">
       <button onClick={Add}>+</button>
-      <p>{Count}</p>
+      <button>{Count}</button>
       <button onClick={Remove}>-</button>
-      <button onClick={onAdd}>Agregar al carrito</button>
+      <button onClick={AddToCart}>Agregar al carrito</button>
     </div>
   );
 };
