@@ -9,7 +9,6 @@ function ItemDetailContainer() {
   useEffect(() => {
     const getProducts = new Promise((res, rej) => {
       const prodFetch = Products.find((prod) => prod.id === id);
-      console.log(id);
       setTimeout(() => {
         res(id ? prodFetch : Products);
       }, 1000);

@@ -21,7 +21,9 @@ function Nav() {
           <Link to="category/fight">Fight</Link>
         </li>
       </ul>
-      <Link to="/Cart"><CartWidget /></Link>
+      <Link to="/Cart">
+        <CartWidget />
+      </Link>
     </div>
   );
 }
