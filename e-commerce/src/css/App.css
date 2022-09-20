@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #161632;
+  background-image: linear-gradient(rgba(5, 5, 10, 0.8), rgba(6, 2, 24, 0.507)),
+    url(https://wallpaperaccess.com/full/2825826.gif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+/*HEADER*/
+
+/*HEADER*/
+
+/*MAIN*/
+
+main img {
+  width: 15em;
+  height: 20em;
+  border-radius: 1em;
+}
+
+main button {
+  width: 4em;
+  height: 2em;
+  background: rgba(245, 245, 245, 0.425);
+  border: none;
+  border-radius: 1em;
+}
+
+/*MAIN*/

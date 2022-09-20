@@ -2,6 +2,7 @@ import Products from "../../Mock/products";
 import React, { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
+import "../../../css/ItemDetail.css";
 
 function ItemDetailContainer() {
   const [items, setItems] = useState({});

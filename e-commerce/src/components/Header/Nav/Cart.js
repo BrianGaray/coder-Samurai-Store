@@ -1,14 +1,28 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { cart, clear, removeItem } = useContext(CartContext);
 
+  if (cart.length === 0) {
+    return (
+      <>
+        <h2>carrito vacio</h2>
+        <button>
+          <Link to="/">Home</Link>
+        </button>
+      </>
+    );
+  }
+
   return (
-    <div>
+    <div className="cart">
       {cart.map((prod) => (
         <div key={prod.id}>
-          <h2>{prod.title}</h2>
+          <h1>{prod.title}</h1>
+          <h2> quantity: {prod.quantity}</h2>
+          <h2> price: {prod.price}</h2>
           <button onClick={() => removeItem(prod.id)}> Remove </button>
         </div>
       ))}

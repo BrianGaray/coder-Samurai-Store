@@ -3,15 +3,21 @@ import { Link } from "react-router-dom";
 
 const Item = ({ items }) => {
   return (
-    <div className="Items">
-      <h1>{items.title}</h1>
-      <h3>{items.category}</h3>
-      <img src={items.img} alt=""></img>
-      <h5>{items.price}</h5>
-      <h5>{items.stock}</h5>
-      <button>
-        <Link to={`/item/${items.id}`}> details </Link>
-      </button>
+    <div className="flip-card">
+      <div className="flip-card-front">
+        <div className="inner">
+          <img src={items.img} alt=""></img>
+        </div>
+      </div>
+      <div className="flip-card-back">
+        <div className="inner">
+          <h3>{items.title}</h3>
+          <h5>{items.price} US$</h5>
+          <button>
+            <Link to={`/item/${items.id}`}> details </Link>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

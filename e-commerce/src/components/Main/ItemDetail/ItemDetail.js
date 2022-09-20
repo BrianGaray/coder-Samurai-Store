@@ -17,16 +17,21 @@ const ItemDetail = ({ items }) => {
   return (
     <section className="ItemDetail">
       <h1>{items.title}</h1>
-      <img src={items.img} alt=""></img>
-      <p>{items.description}</p>
-      <h5>{items.price}$</h5>
-      {quantity === 0 ? (
-        <ItemCount initial={1} stock={items.stock} onAdd={onAdd} />
-      ) : (
-        <button>
-          <Link to="/cart">ir al carrito</Link>
-        </button>
-      )}
+      <div className="desc">
+        <img src={items.img} alt=""></img>
+        <div>
+          <p>{items.description}</p>
+          <h5>{items.price}$</h5>
+
+          {quantity === 0 ? (
+            <ItemCount initial={1} stock={items.stock} onAdd={onAdd} />
+          ) : (
+            <button>
+              <Link to="/cart">ir al carrito</Link>
+            </button>
+          )}
+        </div>
+      </div>
     </section>
   );
 };
