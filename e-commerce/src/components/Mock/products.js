@@ -4,7 +4,7 @@ const Products = [
     title: "producto 1",
     price: 100,
     stock: 3,
-    category: "shooter",
+    category: "shots",
     img: "https://cdn1.epicgames.com/b4565296c22549e4830c13bc7506642d/offer/TETRA_PREORDER_STANDARD%20EDITION_EPIC_Store_Portrait_1200x1600-1200x1600-ca8b802ff13813c37a44ebf68d0946a2.png?h=854&resize=1&w=640",
     description:
       "Battlefield™ 1 te transporta a la Primera Guerra Mundial, donde la nueva tecnología y el conflicto internacional cambiaron la guerra para siempre. Participa en todas las batallas, controla vehículos enormes y ejecuta las maniobras que pueden cambiar las tornas de la batalla. El mundo está en guerra. Descubre qué hay más allá de las trincheras.",
@@ -122,3 +122,10 @@ const Products = [
 ];
 
 export default Products;
+
+/*supervivencia 
+terror
+deportes
+carreras
+aventura
+mundo abierto*/

@@ -16,7 +16,7 @@ function Nav() {
           <Link to="category/action">Action</Link>
         </li>
         <li>
-          <Link to="category/shooter">Shooter</Link>
+          <Link to="category/shots">Shots</Link>
         </li>
         <li>
           <Link to="category/fight">Fight</Link>

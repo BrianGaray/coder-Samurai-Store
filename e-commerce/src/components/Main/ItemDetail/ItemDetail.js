@@ -12,7 +12,6 @@ const ItemDetail = ({ items }) => {
     setQuantity(quantityToAdd);
     addToCart(items, quantityToAdd);
   };
-  console.log(cart);
 
   return (
     <section className="ItemDetail">
