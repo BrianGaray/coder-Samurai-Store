@@ -1,6 +1,5 @@
 const Products = [
   {
-    id: "1",
     title: "producto 1",
     price: 100,
     stock: 3,
@@ -10,7 +9,6 @@ const Products = [
       "Battlefield™ 1 te transporta a la Primera Guerra Mundial, donde la nueva tecnología y el conflicto internacional cambiaron la guerra para siempre. Participa en todas las batallas, controla vehículos enormes y ejecuta las maniobras que pueden cambiar las tornas de la batalla. El mundo está en guerra. Descubre qué hay más allá de las trincheras.",
   },
   {
-    id: "2",
     title: "producto 2",
     price: 100,
     stock: 7,
@@ -20,7 +18,6 @@ const Products = [
       "Cyberpunk 2077 es una historia de acción y aventura en mundo abierto ambientada en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal. Tu personaje es V, un mercenario que persigue un implante único que permite alcanzar la inmortalidad. Podrás personalizar las mejoras cibernéticas, las habilidades y el estilo de juego del personaje para dar forma a un mundo y a una historia que depende de tus decisiones.",
   },
   {
-    id: "3",
     title: "producto 3",
     price: 100,
     stock: 5,
@@ -30,7 +27,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "4",
     title: "producto 4",
     price: 100,
     stock: 5,
@@ -40,7 +36,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "5",
     title: "producto 5",
     price: 100,
     stock: 5,
@@ -50,7 +45,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "6",
     title: "producto 6",
     price: 100,
     stock: 5,
@@ -60,7 +54,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "7",
     title: "producto 7",
     price: 100,
     stock: 5,
@@ -70,7 +63,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "8",
     title: "producto 8",
     price: 100,
     stock: 5,
@@ -80,7 +72,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "9",
     title: "producto 9",
     price: 100,
     stock: 5,
@@ -90,7 +81,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "10",
     title: "producto 10",
     price: 100,
     stock: 5,
@@ -100,7 +90,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "11",
     title: "producto 11",
     price: 100,
     stock: 5,
@@ -110,7 +99,6 @@ const Products = [
       "WWE 2K18 es la nueva entrega de la saga de lucha libra de 2K. Contará con más de 50 luchadores en su rooster original y un modo carrera mejorado, diseñado para que el usuario pueda disfrutar en el universo de WrestleMania desde dos vertientes distintas, Company Man o Fan Favorite. Mejorando gráficos y contando una comunidad online más integrada, WWE 2K18 pretende ser un capítulo más perfeccionado en la franquicia.",
   },
   {
-    id: "12",
     title: "producto 12",
     price: 100,
     stock: 5,

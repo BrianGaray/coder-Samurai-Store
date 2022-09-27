@@ -41,7 +41,7 @@ const CartProvider = ({ children }) => {
   };
 
   //Remove all products
-  const clear = () => {
+  const clearAll = () => {
     setCart([]);
   };
 
@@ -54,9 +54,30 @@ const CartProvider = ({ children }) => {
     return count;
   };
 
+  const totalPrice = () => {
+    let total = 0;
+    cart.forEach((prod) => {
+      total += prod.price * prod.quantity;
+    });
+    return total;
+  };
+
+  const getProductQuantity = (id) => {
+    const product = cart.find((prod) => prod.id === id);
+    return product?.quantity;
+  };
+
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeItem, clear, totalQuantity }}
+      value={{
+        cart,
+        addToCart,
+        removeItem,
+        clearAll,
+        totalQuantity,
+        totalPrice,
+        getProductQuantity,
+      }}
     >
       {children}
     </CartContext.Provider>

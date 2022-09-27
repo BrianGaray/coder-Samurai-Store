@@ -6,12 +6,13 @@ import ItemCount from "./Count/ItemCount";
 
 const ItemDetail = ({ items }) => {
   const [quantity, setQuantity] = useState(0);
-  const { cart, addToCart } = useContext(CartContext);
-
+  const { addToCart, getProductQuantity } = useContext(CartContext);
+ 
   const onAdd = (quantityToAdd) => {
     setQuantity(quantityToAdd);
     addToCart(items, quantityToAdd);
   };
+ const ProductQuantity = getProductQuantity(items.id);
 
   return (
     <section className="ItemDetail">
@@ -23,7 +24,7 @@ const ItemDetail = ({ items }) => {
           <h5>{items.price}$</h5>
 
           {quantity === 0 ? (
-            <ItemCount initial={1} stock={items.stock} onAdd={onAdd} />
+            <ItemCount initial={ ProductQuantity } stock={items.stock} onAdd={onAdd} />
           ) : (
             <button>
               <Link to="/cart">ir al carrito</Link>

@@ -3,7 +3,8 @@ import { CartContext } from "../../../context/CartContext";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
-  const { cart, clear, removeItem } = useContext(CartContext);
+  const { cart, clearAll, removeItem, totalPrice } = useContext(CartContext);
+  const total = totalPrice();
 
   if (cart.length === 0) {
     return (
@@ -22,11 +23,14 @@ const Cart = () => {
         <div key={prod.id}>
           <h1>{prod.title}</h1>
           <h2> quantity: {prod.quantity}</h2>
-          <h2> price: {prod.price}</h2>
+          <h2> Subtotal:{total} US$</h2>
           <button onClick={() => removeItem(prod.id)}> Remove </button>
+          <button>
+            <Link to="/checkout">Checkout</Link>
+          </button>
         </div>
       ))}
-      <button onClick={clear}>clear all</button>
+      <button onClick={clearAll}>clear all</button>
     </div>
   );
 };
