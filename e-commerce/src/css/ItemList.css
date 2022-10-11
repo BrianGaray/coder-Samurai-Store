@@ -1,9 +1,7 @@
 .ItemList {
-  opacity: 0.9;
   padding: 1em;
-  
+  opacity: 0.9;
 }
-
 .cards {
   display: flex;
   align-items: center;
@@ -11,19 +9,16 @@
   justify-content: center;
   gap: 8px;
   position: relative;
-
 }
-
 
 .cards::before {
- content: "";
- position: absolute;
- top: 0;
- right: 0;
- border-top: 10px;
- border-left: 20px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 10px;
+  border-left: 20px;
 }
-
 
 .flip-card {
   position: relative;
@@ -35,7 +30,7 @@
 .flip-card-back {
   width: 20em;
   min-height: 30em;
-  background: linear-gradient(#07051ebd, #c1012e8f);
+  background: linear-gradient(#07051e8a, #c1012e49);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   overflow: hidden;
@@ -44,13 +39,11 @@
   align-items: center;
   text-align: center;
   backdrop-filter: blur(5px);
-  background-size: cover;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  clip-path: polygon(9% 0, 96% 0, 100% 0, 100% 95%, 96% 100%, 0 100%, 0 91%, 0 8%);
+  border-radius: 5px;
 }
-
 
 .flip-card-front {
   transform: rotateY(0deg);
@@ -76,32 +69,13 @@
 
 .flip-card-front .inner,
 .flip-card-back .inner {
-  width: 100%;
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) translateZ(60px) scale(0.94);
   z-index: 2;
-}
-
-.inner .icon {
-  width: 80px;
-  margin-bottom: 20px;
-}
-
-.inner h3 {
-  margin-bottom: 8px;
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40px;
-  text-transform: capitalize;
-}
-
-.inner p {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 10em;
+  gap: 2px;
 }
 
 .flip-card:hover .flip-card-front {

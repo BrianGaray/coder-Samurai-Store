@@ -18,7 +18,7 @@ const ItemDetail = ({ items }) => {
     <section className="ItemDetail">
       <h1>{items.title}</h1>
       <div className="desc">
-        <img src={items.img} alt=""></img>
+        <img loading="lazy" src={items.img} alt=""></img>
         <div className="info">
           <p>{items.description}</p>
           <h5>{items.price}$</h5>

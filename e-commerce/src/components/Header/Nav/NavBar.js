@@ -23,7 +23,6 @@ function Nav() {
         </li>
         <li>
           <button>
-            {" "}
             <Link to="category/fight">Fight</Link>
           </button>
         </li>

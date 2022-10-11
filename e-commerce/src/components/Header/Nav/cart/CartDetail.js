@@ -6,7 +6,7 @@ const CartDetail = ({ prod, removeItem, total }) => {
     <div className="products-cart">
       <div className="img-title">
         <h1>{prod.title}</h1>
-        <img src={prod.img} alt=""></img>
+        <img loading="lazy" src={prod.img} alt=""></img>
         <button onClick={() => removeItem(prod.id)}> Remove </button>
       </div>
 

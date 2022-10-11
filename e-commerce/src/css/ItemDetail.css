@@ -1,79 +1,58 @@
-
 .ItemDetail {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: auto;
-    min-height: 100%;
-    width: 80%;
-    opacity: 0.9;
-    padding: 2em;
+  margin: auto;
+  min-height: 100%;
+  width: 80%;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
 }
 
 .ItemDetail img {
-
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 
 .ItemDetail button {
-    width: 4em;
-    height: 4em;
-    background: rgba(245, 245, 245, 0.425);
-    border: none;
-    border-radius: 1em;
-}
-
-.ItemDetail h1 {
-    text-align: center;
-    color: aliceblue;
-    padding-bottom: 2em;
+  width: 5em;
+  height: 5em;
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
 }
 
 .desc {
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    min-height: 100%;
-    gap: 1em;
-
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  min-height: 100%;
+  gap: 1em;
 }
 
 .info {
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    color: aliceblue;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
 }
-
 
 .AddToCart {
-    display: flex;
-    background: rgba(75, 54, 94, 0.623);
-    border-radius: 20px;
-    border-radius: 20px;
-    justify-content: space-around;
-
-    align-items: center;
-    width: 100%;
-    height: 18%;
+  display: flex;
+  background: rgba(75, 54, 94, 0.623);
+  border-radius: 20px;
+  border-radius: 20px;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  height: 18%;
 }
-
-
-.AddToCart button {
-
-    background: rgba(245, 245, 245, 0.425);
-    border: none;
-    border-radius: 1em;
-
-}
-
