@@ -1,0 +1,36 @@
+.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.products-cart{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1em;
+    gap: 1em;
+}
+
+.img-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: black;
+}
+
+.subtotal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: black;
+    height: 100%;
+    width:100%;
+}

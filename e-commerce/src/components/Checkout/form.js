@@ -54,10 +54,10 @@ const Form = ({ cart, total, clearAll, handleId }) => {
     <div>
       <form action="" onSubmit={handleSubmit}>
         <div>
-          <label>Nombre </label>
+          <label>Name: </label>
           <input
             type="text"
-            placeholder="Nombre..."
+            placeholder="Name"
             name="nombre"
             value={nombre}
             onChange={changeName}
@@ -65,10 +65,10 @@ const Form = ({ cart, total, clearAll, handleId }) => {
           />
         </div>
         <div>
-          <label>Móvil </label>
+          <label>Mobile: </label>
           <input
             type="text"
-            placeholder="Móvil"
+            placeholder="Mobile"
             name="movil"
             value={movil}
             onChange={changeMovil}
@@ -76,7 +76,7 @@ const Form = ({ cart, total, clearAll, handleId }) => {
           />
         </div>
         <div>
-          <label>Email </label>
+          <label>Email: </label>
           <input
             type="email"
             placeholder="Email"
@@ -87,7 +87,7 @@ const Form = ({ cart, total, clearAll, handleId }) => {
           />
         </div>
         <div>
-          <label htmlFor="">Confirmar Email </label>
+          <label htmlFor="">Confirm Email: </label>
           <input
             type="email"
             placeholder="Email"
@@ -98,10 +98,10 @@ const Form = ({ cart, total, clearAll, handleId }) => {
           />
         </div>
         <div>
-          <label htmlFor="">Dirección </label>
+          <label htmlFor="">Location: </label>
           <input
             type="text"
-            placeholder="Dirección"
+            placeholder="Location"
             name="direccion"
             value={adress}
             onChange={changeAdress}
@@ -109,7 +109,7 @@ const Form = ({ cart, total, clearAll, handleId }) => {
           />
         </div>
         <div>
-          <button>Enviar</button>
+          <button>Send</button>
         </div>
       </form>
     </div>

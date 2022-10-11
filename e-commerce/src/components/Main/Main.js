@@ -2,7 +2,7 @@ import React from "react";
 import ItemListContainer from "./ItemList/ItemListContainer";
 import ItemDetailContainer from "./ItemDetail/ItemDetailContainer";
 import { Route, Routes } from "react-router-dom";
-import Cart from "../Header/Nav/Cart";
+import Cart from "../Header/Nav/cart/Cart";
 import Checkout from "../Checkout/checkout";
 
 function Main() {

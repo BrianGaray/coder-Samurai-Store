@@ -1,24 +1,22 @@
-/*//////ITEMDETAIL//////*/
+
 .ItemDetail {
-    background: #161632;
-    background-image: linear-gradient(#0d0b1a,
-            #26183c),
-        url(https://cutewallpaper.org/21/background-gif-html/15-CSS-Animated-Backgrounds-Pintire.gif);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: auto;
-    min-height: 100vh;
+    min-height: 100%;
+    width: 80%;
     opacity: 0.9;
+    padding: 2em;
 }
 
 .ItemDetail img {
-    width: 20em;
-    height: 25em;
-    margin: 1em;
 
+    width: 100%;
+    height: 100%;
 }
+
 
 .ItemDetail button {
     width: 4em;
@@ -30,46 +28,52 @@
 
 .ItemDetail h1 {
     text-align: center;
-    padding: 2em;
     color: aliceblue;
+    padding-bottom: 2em;
 }
 
 .desc {
     margin: auto;
     display: grid;
-    grid-template-columns: 28% 38%;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    min-height: 100%;
+    gap: 1em;
 
 }
 
-.ItemDetail h5 {
-    text-align: center;
-    margin-top: 4em;
+.info {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
     color: aliceblue;
 }
 
-.ItemDetail p {
-    margin: 2em;
-    color: aliceblue;
-}
 
 .AddToCart {
     display: flex;
     background: rgba(75, 54, 94, 0.623);
-    margin: 3em;
-    margin-top: 1em;
     border-radius: 20px;
     border-radius: 20px;
+    justify-content: space-around;
+
+    align-items: center;
+    width: 100%;
+    height: 18%;
 }
 
 
 .AddToCart button {
-    margin: 2em;
-    width: 4em;
-    height: 4em;
+
     background: rgba(245, 245, 245, 0.425);
     border: none;
     border-radius: 1em;
+
 }
 
-/*ITEMDETAIL*/

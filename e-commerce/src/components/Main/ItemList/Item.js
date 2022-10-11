@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({ items }) => {
   return (
-    <div className="flip-card">
+    <section className="flip-card">
       <div className="flip-card-front">
         <div className="inner">
           <img src={items.img} alt=""></img>
@@ -18,7 +18,7 @@ const Item = ({ items }) => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

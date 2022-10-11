@@ -1,6 +1,5 @@
 import ItemList from "./ItemList";
 import React, { useState, useEffect } from "react";
-//import Products from "../../Mock/products";
 import { useParams } from "react-router-dom";
 import "../../../css/ItemList.css";
 import { collection, getDocs, query, where } from "firebase/firestore";
@@ -18,7 +17,6 @@ function ItemListContainer() {
 
     getDocs(reference).then((res) => {
       const products = res.docs.map((prod) => {
-        console.log(prod.data());
         return {
           id: prod.id,
           ...prod.data(),

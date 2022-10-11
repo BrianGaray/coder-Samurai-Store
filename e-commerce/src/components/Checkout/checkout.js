@@ -23,7 +23,7 @@ const Checkout = () => {
 
   return (
     <div className="purchase-order">
-      <p>Orden de Compra</p>
+      <h1>Checkout</h1>
       <div>
         <Form
           cart={cart}

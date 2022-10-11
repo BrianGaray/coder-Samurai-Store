@@ -1,57 +1,54 @@
-/*//////NAV//////*/
+
 .navbar {
-    margin: auto;
-    padding: .5em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(75, 54, 94, 0.151);
-    box-shadow: 20px 20px 60px #1b203800, -20px -20px 60px #11122210;
-    backdrop-filter: blur(10px);
+  margin: auto;
+  padding: 0 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(75, 54, 94, 0.151);
+  box-shadow: 20px 20px 60px #1b203800, -20px -20px 60px #11122210;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
   }
   
-  .navbar ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
+.logo-nav button{
+width: 220px;
+}
+
+  .navbar ul {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+  gap: 2em;
+  list-style: none;
+
   }
   
   .navbar ul li a {
     text-decoration: none;
-    color: rgba(245, 245, 245, 0.425);
-    font-family: "Rubik", sans-serif;
-    font-size: 1.2rem;
   }
   
-  .navbar ul li::before {
-    content: "";
-    height: 3px;
-    width: 0%;
-    background: rgba(75, 54, 94, 0.911);
-    position: absolute;
-    left: 0;
-    bottom: -12px;
-    transition: 0.4s ease-out;
-  }
-  
-  .navbar ul li:hover::before {
-    width: 100%;
-  }
+  .navbar ul button {
+  width: 120px;
+    }
 
   /*CART*/
 .material-icons a,
 span {
-  color: rgba(245, 245, 245, 0.425);
+
   padding: 1px;
   text-decoration: none;
 }
 a {
   text-decoration: none;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .cart {
-  color: aliceblue;
+
   text-align: center;
 }
 .cartNumber {
@@ -60,4 +57,3 @@ a {
   text-decoration: none;
 }
 
-/*NAV*/

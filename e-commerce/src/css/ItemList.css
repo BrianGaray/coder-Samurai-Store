@@ -1,18 +1,31 @@
-/*//////ITEMLIST//////*/
-
 .ItemList {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
   opacity: 0.9;
-  margin: 1.5em 0;
+  padding: 1em;
+  
 }
 
-/*FLIP CARD*/
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+
+}
+
+
+.cards::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ right: 0;
+ border-top: 10px;
+ border-left: 20px;
+}
+
 
 .flip-card {
-  margin: 5px 1px;
   position: relative;
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -22,21 +35,22 @@
 .flip-card-back {
   width: 20em;
   min-height: 30em;
-  height: auto;
-  background-color: #000000;
-  background-image: linear-gradient(
-      rgba(5, 5, 10, 0.8),
-      rgba(75, 54, 94, 0.911)
-    ),
-    url(https://cutewallpaper.org/21/background-gif-html/15-CSS-Animated-Backgrounds-Pintire.gif);
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(#07051ebd, #c1012e8f);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  backdrop-filter: blur(5px);
+  background-size: cover;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-  border-radius: 1em;
+  clip-path: polygon(9% 0, 96% 0, 100% 0, 100% 95%, 96% 100%, 0 100%, 0 91%, 0 8%);
 }
+
 
 .flip-card-front {
   transform: rotateY(0deg);
@@ -97,5 +111,3 @@
 .flip-card:hover .flip-card-back {
   transform: rotateY(0deg);
 }
-
-/*ITEMLIST*/
